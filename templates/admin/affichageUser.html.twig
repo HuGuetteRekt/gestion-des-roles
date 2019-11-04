@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="affichage s12 m12 l12">
+                <h3>Liste des Utilisateurs !</h3>
+                {% for user in users %}
+                <ul class="liste">
+                    <li>Nom d'utilisateur : {{ user.username }}</li>
+                    <a href="/admin/affichageUser/{{ user.id }}">Plus d'info sur l'utlisateur</a>
+                    <a href="/admin/affichageUser/{{ user.id}}/edit">Modifier l'utilisateur</a>
+                    <a href="/admin/affichageUser/{{ user.id}}/delete">Supprimer l'utilisateur</a>  
+                </ul>
+                {% endfor %}
+                <p class="retour"><a href="{{ path('admin') }}">Retour à la page ADMIN</a></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+     <div class="container">
+        <div class="row">
+            <div class="s12 m12 l12">
+                <h2>Edition d'une élève</h2>
+                {{ form(form) }}
+                <p class="retour"><a href="{{ path('affichageEleve') }}">Retour à la liste des élèves</a></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

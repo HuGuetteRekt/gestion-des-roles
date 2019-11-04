@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="s12 m12 l12">
+                <h3> Affichage du professeur  {{professeur.id}} </h3>
+                <ul class="liste">
+                    <li>Nom : {{ professeur.nom }}</li>
+                    <li>Prénom : {{ professeur.prenom }}</li>
+                    <li>Matière : {{ professeur.matiere }}</li>
+                    <li>Téléphone : {{ professeur.telephone }}</li>
+                </ul>
+                <p class="retour"><a href="{{ path('affichageProfesseur') }}">Retour à la liste des professeurs</a></p>
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

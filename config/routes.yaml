@@ -1,3 +1,106 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+homepage:
+    path: /
+    controller: App\Controller\ProjectController::index
+
+formEcole :
+    path: /admin/formEcole
+    controller: App\Controller\EcoleController::formEcole
+
+formEleve :
+    path: /admin/formEleve
+    controller: App\Controller\EleveController::formEleve
+
+formProfesseur :
+    path: /admin/formProfesseur
+    controller: App\Controller\ProfesseurController::formProfesseur
+
+admin :
+    path: /admin
+    controller: App\Controller\ProjectController::admin
+
+user :
+    path: /user
+    controller: App\Controller\ProjectController::user
+
+logout:
+    path: /logout
+    controller: App\Controller\ProjectController::logout
+
+affichageEleve:
+    path: /admin/affichageEleve
+    controller: App\Controller\EleveController::affichageEleve
+
+affichageEleveId:
+    path: /admin/affichageEleve/{id}
+    controller: App\Controller\EleveController::affichageEleveId
+
+editEleve:
+    path: /admin/affichageEleve/{id}/edit
+    controller: App\Controller\EleveController::editEleve
+
+deleteEleve:
+    path: /admin/affichageEleve/{id}/delete
+    controller: App\Controller\EleveController::deleteEleve
+
+affichageEcole:
+    path: /admin/affichageEcole
+    controller: App\Controller\EcoleController::affichageEcole
+
+affichageEcoleId:
+    path: /admin/affichageEcole/{id}
+    controller: App\Controller\EcoleController::affichageEcoleId
+
+editEcole:
+    path: /admin/affichageEcole/{id}/edit
+    controller: App\Controller\EcoleController::editEcole
+
+deleteEcole:
+    path: /admin/affichageEcole/{id}/delete
+    controller: App\Controller\EcoleController::deleteEcole
+
+affichageProfesseur:
+    path: /admin/affichageProfesseur
+    controller: App\Controller\ProfesseurController::affichageProfesseur
+
+affichageProfesseurId:
+    path: /admin/affichageProfesseur/{id}
+    controller: App\Controller\ProfesseurController::affichageProfesseurId
+
+editProfesseur:
+    path: /admin/affichageProfesseur/{id}/edit
+    controller: App\Controller\ProfesseurController::editProfesseur
+
+deleteProfesseur:
+    path: /admin/affichageProfesseur/{id}/delete
+    controller: App\Controller\ProfesseurController::deleteProfesseur
+
+affichageUser:
+    path: /admin/affichageUser
+    controller: App\Controller\UserController::affichageUser
+
+affichageUserId:
+    path: /admin/affichageUser/{id}
+    controller: App\Controller\UserController::affichageUserId
+
+editUser:
+    path: /admin/affichageUser/{id}/edit
+    controller: App\Controller\UserController::editUser
+
+deleteUser:
+    path: /admin/affichageUser/{id}/delete
+    controller: App\Controller\UserController::deleteUser
+
+affichageInfoEleve:
+    path: /user/affichageInfoEleve
+    controller: App\Controller\UtilisateurController::affichageInfoEleve
+
+affichageInfoEcole:
+    path: /user/affichageInfoEcole
+    controller: App\Controller\UtilisateurController::affichageInfoEcole
+
+affichageInfoProfesseur:
+    path: /user/affichageInfoProfesseur
+    controller: App\Controller\UtilisateurController::affichageInfoProfesseur
+
+    
+

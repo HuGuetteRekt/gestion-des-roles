@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="s12 m12 l12">
+                <h3> Affichage de l'école {{ecole.id}} </h3>
+                <ul class="liste">
+                    <li>Nom : {{ ecole.nom }}</li>
+                    <li>Adresse : {{ ecole.adresse }}</li>
+                    <li>Email : {{ ecole.email }}</li>
+                    <li>Téléphone : {{ ecole.telephone }}</li>
+                    <li>Ville : {{ ecole.ville }}</li>
+                    <li>Type d'école : {{ ecole.type }}</li>
+                    {% if ecole.agregation == 1 %} <li>Agrégé : Oui</li> 
+                    {% else %} <li>Agrégé : Non</li> {% endif %}
+                </ul>
+                <p class="retour"><a href="{{ path('affichageEcole') }}">Retour à la liste des écoles</a></p>           
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

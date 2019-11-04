@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="affichage s12 m12 l12">
+                <h3>Liste des professeurs !</h3>
+                {% for professeur in professeurs %}
+                <ul class="liste">
+                    <li>Nom : {{ professeur.nom }}</li>
+                    <a href="/admin/affichageProfesseur/{{ professeur.id }}">Plus d'info sur le professeur</a>
+                    <a href="/admin/affichageProfesseur/{{ professeur.id}}/edit">Modifier le professeur</a>
+                    <a href="/admin/affichageProfesseur/{{ professeur.id}}/delete">Supprimer le professeur</a> 
+                </ul>
+                {% endfor %}
+                <p class="retour"><a href="{{ path('admin') }}">Retour à la page ADMIN</a></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

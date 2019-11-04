@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="s12 m12 l12">
+                <h3> Affichage de l'élève {{eleve.id}} </h3>
+                <ul class="liste">
+                    <li>Nom : {{ eleve.nom }}</li>
+                    <li>Prénom : {{ eleve.prenom }}</li>
+                    <img src=" {{ asset('uploads/images/' ~ eleve.photo) }} " alt="photo d'un eleve">
+                </ul>
+                <p class="retour"><a href="{{ path('affichageEleve') }}">Retour à la liste des élèves</a></p>
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

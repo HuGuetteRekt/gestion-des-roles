@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Accueil | {{parent() }} {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                <h1>Bienvenue sur la page d'accueil </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h4><a href="{{ path('login') }}">Se connecter</a></h4>
+                <h4><a href="{{ path('register') }}">S'enregistrer</a></h4>    
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

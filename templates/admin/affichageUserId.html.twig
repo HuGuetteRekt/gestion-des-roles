@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="s12 m12 l12">
+                <h3> Affichage de l'utilisateur  {{user.id}} </h3>
+                <ul class="liste">
+                    <li>Username : {{ user.username }}</li>
+                    <li>Mot de passe crypté : {{ user.password }}</li>
+                    {# <li>Role : {{ user.roles }}</li> #}
+                </ul>
+                <p class="retour"><a href="{{ path('affichageUser') }}">Retour à la liste des utilisateurs</a></p>
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

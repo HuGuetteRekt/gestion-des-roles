@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+     <div class="container">
+        <div class="row">
+            <div class="s12 m12 l12">
+                <h2>Edition d'un utilisateur</h2>
+                {{ form(form) }}
+                <p class="retour"><a href="{{ path('affichageUser') }}">Retour à la liste des utilisateurs</a></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

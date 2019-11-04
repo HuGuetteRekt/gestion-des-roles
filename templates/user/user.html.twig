@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                 <h1>Bienvenue sur la page USER </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                <h5>Affichage des informations :</h5>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('affichageInfoEcole') }}">Informations des écoles</a></h4>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('affichageInfoEleve') }}">Informations des élèves</a></h4>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('affichageInfoProfesseur') }}">Informations des professeurs</a></h4>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

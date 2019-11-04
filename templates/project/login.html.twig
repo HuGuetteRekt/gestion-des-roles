@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                 <h1>Bienvenue sur la page de connexion </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+
+                <h2> Connexion !</h2>
+                {% if error %}
+                    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+                <form action="{{ path('login') }}" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="_password" />
+
+                    <button type="submit">Se connecter</button>
+                </form>
+                <p class="retour"><a href="{{ path('index') }}">Retour accueil</a></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                 <h3>Formulaire d'ajout d'une école</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                {{ form(form) }}
+            </div>
+            <p class="retour"><a href="{{ path('admin') }}">Retour à la page ADMIN</a></p>
+        </div>
+    </div>
+
+{% endblock %}

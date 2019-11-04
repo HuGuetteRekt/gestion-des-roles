@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                 <h1>Bienvenue sur la page du formulaire d'inscription </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                {{ form_start(form) }}
+                    {{ form_row(form.username) }}
+                    {{ form_row(form.plainPassword.first) }}
+                    {{ form_row(form.plainPassword.second) }}
+
+                <button type="submit">S'enregistrer</button>
+                {{ form_end(form) }}
+            <p class="retour"><a href="{{ path('index') }}">Retour accueil</a></p>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

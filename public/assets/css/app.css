@@ -1,0 +1,135 @@
+.titre{
+    text-align: center;
+}
+
+input{
+    opacity: 100 !important;
+    top: 643px;
+    right: 1360px;
+}
+
+h5{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+
+img{
+    height: 300px;
+    width: 400px;
+    border-radius: 20%;
+}
+
+label{
+    color: black !important;
+}
+
+button{
+    margin-top:10px;
+    margin-bottom: 30px;
+    padding:6px 0 6px 0;
+	font:Bold 15px Arial;
+	background:#3675d3;
+	color:#fff;
+	width:100px;
+	border-radius:2px;
+    border:none;
+    border: solid 1px #3675d3;
+}
+
+button:hover{
+    background: white;
+    color: #3675d3;
+    border: solid 1px #3675d3;
+}
+
+nav{
+    color: #fff;
+    background-color: #3675d3!important;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+.alert{
+    background-color:rgba(0, 255, 0, 0.4);
+    text-align:center;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.affichage a{
+    padding-right: 20px;
+}
+
+h4 a{
+    padding:6px 3px 6px 3px;
+	font:Bold 15px Arial;
+	background:#3675d3;
+	color:#fff;
+	width:90px;
+	border-radius:2px;
+	border:none;
+}
+
+h4 a:hover{
+    background: white;
+    color: #3675d3;
+    border: solid 1px #3675d3;
+}
+
+.liste a{
+    padding:6px 3px 6px 3px;
+    margin-right : 5px;
+	font:Bold 15px Arial;
+	background:#3675d3;
+	color:#fff;
+	width:90px;
+	border-radius:2px;
+    border:none;
+    border: solid 1px #3675d3;
+}
+
+.liste li{
+    margin-bottom: 10px;
+    font:Bold 15px Arial;
+}
+
+.liste a:hover{
+    background: white;
+    color: #3675d3;
+    border: solid 1px #3675d3;
+}
+
+.retour{
+    margin-top: 30px;
+}
+
+.retour a{
+    padding:6px 3px 6px 3px;  
+	font:Bold 15px Arial;
+	background:#d34036;
+	color:#fff;
+	width:90px;
+	border-radius:2px;
+	border:none;
+}
+
+.retour a:hover{
+    background:white;
+    color: #d34036;
+    border: solid 1px #d34036;;
+}
+
+input#form_photo{
+    
+    margin: 20px 0 20px 20px
+}
+
+input#eleve_photo{
+    
+    margin: 20px 0 20px 20px
+}

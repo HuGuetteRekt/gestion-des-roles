@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                 <h1>Bienvenue sur la page ADMIN </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h5>Formulaires d'ajout : </h5>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('formEcole') }}">Formulaire école</a></h4>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('formEleve') }}">Formulaire élève</a></h4>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('formProfesseur') }}">Formulaire prof</a></h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12 titre">
+                <h5>Affichage des informations :</h5>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('affichageEcole') }}">Informations des écoles</a></h4>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('affichageEleve') }}">Informations des élèves</a></h4>
+            </div>
+            <div class="col s4 m4 l4">
+                <h4><a href="{{ path('affichageProfesseur') }}">Informations des professeurs</a></h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h5>Affichage des utilisateurs</h5>
+                <h4><a href="{{ path('affichageUser') }}">Informations des utlisateurs</a></h4>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
